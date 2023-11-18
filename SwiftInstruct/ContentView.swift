@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SwiftInstruct
 //
-//  Created by FBI Man on 11/18/23.
+//  Created by Bmo on 11/18/23.
 //
 
 import SwiftUI
@@ -15,7 +15,7 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .padding()
+        .padding(10)
     }
 }
 
