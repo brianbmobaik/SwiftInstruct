@@ -11,7 +11,9 @@ struct ModulesView: View {
                 NavigationLink(destination: Text(module.title)) {
                     CardView(modules: module)
                 }
-                .listRowBackground(Color.clear)
+                .listRowBackground(RoundedRectangle(cornerRadius: 15, style: .continuous)
+                    .foregroundColor(module.theme.mainColor)
+                    .frame(width: 360, height: 70))
             }
             .navigationTitle("Modules")
         }

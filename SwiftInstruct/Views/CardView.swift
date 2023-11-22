@@ -13,6 +13,7 @@ struct CardView: View {
                 .font(.moduleTitle)
                 .foregroundColor(.white)
                 .accessibilityAddTraits(.isHeader)
+                .scaledToFit()
             
             HStack(alignment: .center) {
                 ProgressView(value: modules.progress)
@@ -27,9 +28,6 @@ struct CardView: View {
                 .foregroundColor(.orange)
         }
         .padding(paddingWidth)
-        .background(RoundedRectangle(cornerRadius: 15, style: .continuous)
-            .foregroundColor(modules.theme.mainColor)
-            .frame(width: 360, height: 70))
         .padding(paddingWidth)
     }
 }
