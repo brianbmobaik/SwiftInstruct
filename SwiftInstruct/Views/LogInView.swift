@@ -3,8 +3,17 @@
 import SwiftUI
 
 struct LogInView: View {
+    
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Form {
+                TextField("Email Address", text: $email)
+                SecureField("Password", text: $password)
+            }
+        }
     }
 }
 

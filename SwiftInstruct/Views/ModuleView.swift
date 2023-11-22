@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct ModuleView: View {
     let modules: Modules
         
     var body: some View {
@@ -35,11 +35,11 @@ struct CardView: View {
     }
 }
 
-struct CardView_Previews: PreviewProvider {
+struct ModuleView_Previews: PreviewProvider {
     static var modules = Modules.sampleModule[1]
     
     // Passing modules into ModulesView's Init
     static var previews: some View {
-        CardView(modules: modules)
+        ModuleView(modules: modules)
     }
 }

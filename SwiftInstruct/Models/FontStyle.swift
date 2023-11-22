@@ -20,4 +20,8 @@ extension Font {
     static var progressTitle: Font {
         return Font.custom("Roboto-Medium", size: 6)
     }
+    
+    static var headerName: Font {
+        return Font.custom("Roboto-Medium", size: 24)
+    }
 }

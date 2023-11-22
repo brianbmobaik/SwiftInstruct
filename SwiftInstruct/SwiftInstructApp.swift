@@ -6,7 +6,7 @@ import SwiftUI
 struct SwiftInstructApp: App {
     var body: some Scene {
         WindowGroup {
-            ModulesView(modules: Modules.sampleModule)
+            ModulesListView(modules: Modules.sampleModule)
         }
     }
 }
