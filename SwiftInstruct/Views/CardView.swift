@@ -4,31 +4,34 @@ import SwiftUI
 
 struct CardView: View {
     let modules: Modules
-    
-    @ScaledMetric(relativeTo: .title) var paddingWidth = 14.5
-    
+        
     var body: some View {
+        // Veritcal Stack to Stack elements on Vertically
         VStack(alignment: .leading) {
+            
+            // Title of the Module
             Text(modules.title)
                 .font(.moduleTitle)
                 .foregroundColor(.white)
                 .accessibilityAddTraits(.isHeader)
                 .scaledToFit()
             
+            // Horizontal Stack to stack elements on Horizontally
             HStack(alignment: .center) {
+                // Progress Bar
                 ProgressView(value: modules.progress)
                     .progressViewStyle(ModuleProgressBarViewStyle())
                 
+                // Progress Checks
                 Image(systemName: "checkmark.circle.fill")
                     .foregroundColor(.green)
             }
             
+            // Progress Percent Values
             Text("\(String(format: "%.1f", modules.progress * 100))% Completed")
                 .font(.progressTitle)
                 .foregroundColor(.orange)
         }
-        .padding(paddingWidth)
-        .padding(paddingWidth)
     }
 }
 
