@@ -74,4 +74,4 @@ struct MainMenuView: View {
         }
     }
 }
-
+}
