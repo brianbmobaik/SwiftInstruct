@@ -48,11 +48,22 @@ struct LogInView: View {
                     .padding()
             }
             Rectangle()
-                .frame(width: 352, height: 1)
+                .frame(width: 350, height: 1)
                 .foregroundColor(.black)
-                .padding(.top, -33)
-                .offset(x: 6)
-            .padding()
+                .padding(.top, -20)
+                .offset(x: 20)
+            
+            Button{ } label: {
+                Text("Sign Up")
+                    .bold()
+                    .frame(width: 200, height: 40)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(LinearGradient(colors: [.blue], startPoint: .top, endPoint: .bottomTrailing))
+                    ) .foregroundColor(.white)
+            }
+            .padding(.top, 10)
+            .offset(x: 90)
         }
     }
     
