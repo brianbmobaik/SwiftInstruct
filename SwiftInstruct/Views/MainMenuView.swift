@@ -13,6 +13,8 @@ let gradientBackground = LinearGradient(colors: gradientColors,
 struct MainMenuView: View {
     
     @State private var animateGradient: Bool = false
+    @State private var loginSelection: String?
+    @State private var registerSelection: String?
     
     var body: some View {
         VStack(alignment: .center) {
@@ -33,22 +35,28 @@ struct MainMenuView: View {
             .padding()
             
             Spacer()
-            
+
             HStack(alignment: .center) {
-                // Log In Button
-                Button {
-                    
-                } label: {
-                    Image("btn-LogIn")
+                    // Log In Button
+                    NavigationLink(
+                        destination: LogInView(),
+                        tag: "login",
+                        selection: $loginSelection,
+                        label: {
+                            Image("btn-LogIn")
+                        }
+                    )
+
+                    // Register Button
+                   NavigationLink(
+                        destination: RegisterView(),
+                        tag: "register",
+                        selection: $registerSelection,
+                        label: {
+                            Image("btn-Register")
+                        }
+                    )
                 }
-                
-                // Register Button
-                Button {
-                    
-                } label: {
-                    Image("btn-Register")
-                }
-            }
             .padding()
             
         }
