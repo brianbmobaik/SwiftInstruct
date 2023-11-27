@@ -1,76 +1,56 @@
-/* Log In Menu View */
-
 import SwiftUI
 
 struct LogInView: View {
-    
     @State var email = ""
     @State var password = ""
+    @State var wrongEmail = 0
+    @State var wrongPassword = 0
+    @ObservedObject var viewModel: AppViewModel
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Welcome to SwiftInstruct")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(.black)
-                .padding()
-            
-            ZStack(alignment: .leading) {
-                if email.isEmpty {
-                    Text("Email")
-                        .foregroundColor(.gray)
-                        .bold()
-                        .padding(.leading, 22)
-                }
-                
-                TextField("", text: $email)
+        ZStack {
+            BackgroundView(viewModel: viewModel)
+                .edgesIgnoringSafeArea(.all)
+
+            VStack(alignment: .leading) {
+                Text("Welcome to SwiftInstruct")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .foregroundColor(.black)
-                    .textFieldStyle(.plain)
                     .padding()
-            }
-            Rectangle()
-                .frame(width: 350, height: 1)
-                .foregroundColor(.black)
-                .padding(.top, -20)
-                .offset(x: 20)
-            
-            ZStack(alignment: .leading) {
-                if password.isEmpty {
-                    Text("Password")
-                        .foregroundColor(.gray)
-                        .bold()
-                        .padding(.leading, 22)
-                }
+
+                TextField("Email", text: $email)
+                    .padding()
+                    .frame(width: 350, height: 50)
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    .border(.red, width: CGFloat(wrongEmail))
+                    .offset(x: 17)
                 
-                SecureField("", text: $password)
-                    .foregroundColor(.black)
-                    .textFieldStyle(.plain)
+                TextField("Password", text: $password)
                     .padding()
+                    .frame(width: 350, height: 50)
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    .border(.red, width: CGFloat(wrongEmail))
+                    .offset(x: 2)
+                    .padding()
+                
+                Button("Log In"){    
+                }
+                    .foregroundColor(.white)
+                    .frame(width: 150, height: 50)
+                    .background(Color.black)
+                    .cornerRadius(10)
+                    .offset(x: 120)
+                }
+            .padding()
             }
-            Rectangle()
-                .frame(width: 350, height: 1)
-                .foregroundColor(.black)
-                .padding(.top, -20)
-                .offset(x: 20)
-            
-            Button{ } label: {
-                Text("Sign Up")
-                    .bold()
-                    .frame(width: 200, height: 40)
-                    .background(
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(LinearGradient(colors: [.blue], startPoint: .top, endPoint: .bottomTrailing))
-                    ) .foregroundColor(.white)
-            }
-            .padding(.top, 10)
-            .offset(x: 90)
         }
     }
-    
-    
-    struct LogInView_Previews: PreviewProvider {
-        static var previews: some View {
-            LogInView()
-        }
+
+struct LogInView_Previews: PreviewProvider {
+    static var previews: some View {
+        LogInView(viewModel: AppViewModel())
     }
 }
