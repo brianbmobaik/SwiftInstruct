@@ -8,10 +8,34 @@ struct LogInView: View {
     @State var password = ""
     
     var body: some View {
-        VStack {
-            Form {
-                TextField("Email Address", text: $email)
-                SecureField("Password", text: $password)
+        ZStack {
+            MainMenuBackgroundView()
+            
+            VStack {
+                Text("Welcome to SwiftInstruct")
+                    .font(.appTitle)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.black)
+                    .padding()
+                
+                TextField("Email", text: $email)
+                    .padding()
+                    .frame(width: 350, height: 50)
+                    .background(.white.opacity(0.75))
+                    .cornerRadius(10)
+                
+                TextField("Password", text: $password)
+                    .padding()
+                    .frame(width: 350, height: 50)
+                    .background(.white.opacity(0.75))
+                    .cornerRadius(10)
+                
+                Button("Log In") {
+                    // Log in logic
+                }
+                .frame(width: 350, height: 50)
+                .background(.white.opacity(1))
+                .cornerRadius(10)
             }
         }
     }

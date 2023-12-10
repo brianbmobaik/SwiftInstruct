@@ -9,8 +9,6 @@ struct ModulesListView: View {
         VStack {
             HeaderView()
             
-            Spacer()
-            
             NavigationStack {
                 List(modules) { module in
                     NavigationLink(destination: Text(module.title)) {
@@ -22,8 +20,6 @@ struct ModulesListView: View {
                 }
                 .navigationTitle("Modules")
             }
-            
-            Spacer()
             
             TabBarView()
         }
