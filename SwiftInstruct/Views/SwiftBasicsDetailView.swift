@@ -18,7 +18,7 @@ struct SwiftBasicsDetailView: View {
     }
 
     func categoryView(title: String, description: String, example: String) -> some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 5) {
             Text(title)
                 .font(.headline)
 
@@ -26,9 +26,11 @@ struct SwiftBasicsDetailView: View {
                 .foregroundColor(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
 
+            Spacer()
+
             Text(example)
                 .foregroundColor(.blue)
-                .font(.system(size: 12))
+                .font(.body)
                 .fixedSize(horizontal: false, vertical: true)
         }
     }

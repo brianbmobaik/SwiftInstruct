@@ -40,6 +40,16 @@ struct SwiftBasicsData {
             title: "Constants",
             description: "Constants are declared using the let keyword and cannot be changed once set.",
             example: "let pi = 3.14"
+        ),
+        ModuleData(
+            title: "Data Types",
+            description: "Swift supports various data types like Int, Double, String, etc.",
+            example: "let name: String = \"John\""
+        ),
+        ModuleData(
+            title: "Control Flow",
+            description: "Use if statements, loops, and switch cases for control flow in Swift.",
+            example: "if x > 10 {\n    print(\"x is greater than 10\")\n} else {\n    print(\"x is not greater than 10\")\n}"
         )
     ]
 }
@@ -55,8 +65,17 @@ struct DataStructuresData {
             title: "Linked Lists",
             description: "A data structure that consists of a sequence of elements where each element points to the next one.",
             example: "class Node<T> {\n    var value: T\n    var next: Node<T>?\n}\n\nvar linkedList = Node(value: 1)"
+        ),
+        ModuleData(
+            title: "Stacks",
+            description: "A Last In, First Out (LIFO) data structure where the last element added is the first one to be removed.",
+            example: "var stack = [1, 2, 3]\nstack.append(4)\nlet lastElement = stack.popLast()"
+        ),
+        ModuleData(
+            title: "Queues",
+            description: "A First In, First Out (FIFO) data structure where the first element added is the first one to be removed.",
+            example: "var queue = [1, 2, 3]\nqueue.append(4)\nlet firstElement = queue.removeFirst()"
         )
-        // Add more modules as needed
     ]
 }
 
