@@ -16,8 +16,12 @@ struct ModulesListView: View {
                     NavigationLink(destination: {
                         if module.title == "Module 1: Swift Basics" {
                             SwiftBasicsDetailView()
+                        } else if module.title == "Module 2: Object-Oriented Programming" {
+                            ObjectOrientedProgrammingDetailView()
                         } else if module.title == "Module 3: Data Structures" {
                             DataStructuresDetailView()
+                        } else if module.title == "Module 4: Swift UI" {
+                            SwiftUIDetailView()
                         } else {
                             Text(module.title)
                         }

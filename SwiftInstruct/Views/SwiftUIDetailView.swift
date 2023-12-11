@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct DataStructuresDetailView: View {
-    var modules: [ModuleData] = DataStructuresData.modules
+struct SwiftUIDetailView: View {
+    var modules: [ModuleData] = SwiftUIProgrammingData.modules
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -15,7 +15,6 @@ struct DataStructuresDetailView: View {
             }
         }
         .padding(.horizontal)
-        // .navigationBarTitle("Data Structures")
     }
 
     func categoryView(title: String, description: String, example: String) -> some View {
@@ -37,9 +36,8 @@ struct DataStructuresDetailView: View {
     }
 }
 
-struct DataStructuresDetailView_Previews: PreviewProvider {
+struct SwiftUIDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DataStructuresDetailView()
+        SwiftUIDetailView()
     }
 }
-

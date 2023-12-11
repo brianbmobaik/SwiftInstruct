@@ -36,6 +36,8 @@
 		4FD1356A2B25865500C806C8 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4FD135692B25865500C806C8 /* FirebaseStorageCombine-Community */; };
 		4FD1356C2B2635EB00C806C8 /* SwiftBasicsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1356B2B2635EB00C806C8 /* SwiftBasicsDetailView.swift */; };
 		4FD135702B26569100C806C8 /* DataStructuresDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1356F2B26569100C806C8 /* DataStructuresDetailView.swift */; };
+		4FD1357A2B2680E700C806C8 /* ObjectOrientedProgrammingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD135792B2680E700C806C8 /* ObjectOrientedProgrammingData.swift */; };
+		4FD1357C2B26816400C806C8 /* SwiftUIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1357B2B26816400C806C8 /* SwiftUIDetailView.swift */; };
 		B809380D2B092C14004F9F57 /* SwiftInstructApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809380C2B092C14004F9F57 /* SwiftInstructApp.swift */; };
 		B809380F2B092C14004F9F57 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809380E2B092C14004F9F57 /* MainMenuView.swift */; };
 		B80938112B092C15004F9F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80938102B092C15004F9F57 /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		4FD1356B2B2635EB00C806C8 /* SwiftBasicsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBasicsDetailView.swift; sourceTree = "<group>"; };
 		4FD1356F2B26569100C806C8 /* DataStructuresDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructuresDetailView.swift; sourceTree = "<group>"; };
+		4FD135792B2680E700C806C8 /* ObjectOrientedProgrammingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectOrientedProgrammingData.swift; sourceTree = "<group>"; };
+		4FD1357B2B26816400C806C8 /* SwiftUIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDetailView.swift; sourceTree = "<group>"; };
 		B80938092B092C14004F9F57 /* SwiftInstruct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftInstruct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B809380C2B092C14004F9F57 /* SwiftInstructApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInstructApp.swift; sourceTree = "<group>"; };
 		B809380E2B092C14004F9F57 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				B82A5F852B0E826D002045E6 /* HeaderView.swift */,
 				4FD1356B2B2635EB00C806C8 /* SwiftBasicsDetailView.swift */,
 				4FD1356F2B26569100C806C8 /* DataStructuresDetailView.swift */,
+				4FD135792B2680E700C806C8 /* ObjectOrientedProgrammingData.swift */,
+				4FD1357B2B26816400C806C8 /* SwiftUIDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,9 +328,11 @@
 				B8ED84C42B0E4CE2005086E9 /* LogInView.swift in Sources */,
 				B809382F2B0984D4004F9F57 /* IconLabelStyle.swift in Sources */,
 				B809380D2B092C14004F9F57 /* SwiftInstructApp.swift in Sources */,
+				4FD1357C2B26816400C806C8 /* SwiftUIDetailView.swift in Sources */,
 				B80938352B09A1F2004F9F57 /* ModuleProgressViewStyle.swift in Sources */,
 				B80938272B0970B4004F9F57 /* ModuleView.swift in Sources */,
 				4FD1356C2B2635EB00C806C8 /* SwiftBasicsDetailView.swift in Sources */,
+				4FD1357A2B2680E700C806C8 /* ObjectOrientedProgrammingData.swift in Sources */,
 				B82A5F842B0E7280002045E6 /* TabBarView.swift in Sources */,
 				B80938232B093BE5004F9F57 /* Modules.swift in Sources */,
 				B82A5F862B0E826E002045E6 /* HeaderView.swift in Sources */,

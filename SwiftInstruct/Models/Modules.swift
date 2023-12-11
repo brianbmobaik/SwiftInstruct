@@ -79,3 +79,52 @@ struct DataStructuresData {
     ]
 }
 
+struct ObjectOrientedProgrammingData {
+    static let modules: [ModuleData] = [
+        ModuleData(
+            title: "Classes and Objects",
+            description: "Define classes to encapsulate data and behavior.",
+            example: "class Person {\n    var name: String\n    var age: Int\n    init(name: String, age: Int) {\n        self.name = name\n        self.age = age\n    }\n}"
+        ),
+        ModuleData(
+            title: "Inheritance",
+            description: "Create new classes based on existing ones.",
+            example: "class Student: Person {\n    var studentId: String\n    init(name: String, age: Int, studentId: String) {\n        super.init(name: name, age: age)\n        self.studentId = studentId\n    }\n}"
+        ),
+        ModuleData(
+            title: "Polymorphism",
+            description: "Enable a class to provide different implementations for its methods.",
+            example: "class Shape {\n    func draw() {\n        // Implementation for drawing shape\n    }\n}\n\nclass Circle: Shape {\n    override func draw() {\n        // Implementation for drawing circle\n    }\n}"
+        ),
+        ModuleData(
+            title: "Encapsulation",
+            description: "Hide the internal implementation details of an object and expose only what is necessary.",
+            example: "class BankAccount {\n    private var balance: Double\n    init(initialBalance: Double) {\n        self.balance = initialBalance\n    }\n    func deposit(amount: Double) {\n        // Implementation for deposit\n    }\n}"
+        )
+    ]
+}
+
+struct SwiftUIProgrammingData {
+    static let modules: [ModuleData] = [
+        ModuleData(
+            title: "Swift UI Basics",
+            description: "Introduction to building user interfaces with SwiftUI.",
+            example: "struct ContentView: View {\n    var body: some View {\n        Text(\"Hello, SwiftUI!\")\n    }\n}"
+        ),
+        ModuleData(
+            title: "State and Binding",
+            description: "Manage and update the state of your SwiftUI views.",
+            example: "struct CounterView: View {\n    @State private var count = 0\n    var body: some View {\n        Button(\"Increment\") {\n            count += 1\n        }\n    }\n}"
+        ),
+        ModuleData(
+            title: "Lists and Navigation",
+            description: "Create dynamic lists and implement navigation in SwiftUI apps.",
+            example: "struct ListView: View {\n    var body: some View {\n        NavigationView {\n            List {\n                Text(\"Item 1\")\n                Text(\"Item 2\")\n            }\n            .navigationTitle(\"List\")\n        }\n    }\n}"
+        ),
+        ModuleData(
+            title: "Animations",
+            description: "Add animations to your SwiftUI views for a more engaging user experience.",
+            example: "struct AnimatedView: View {\n    @State private var rotation: Double = 0\n    var body: some View {\n        Image(systemName: \"arrow.right.circle\")\n            .rotationEffect(.degrees(rotation))\n            .onTapGesture {\n                withAnimation {\n                    rotation += 45\n                }\n            }\n    }\n}"
+        )
+    ]
+}
