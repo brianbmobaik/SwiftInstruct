@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B676A02B26E885001D37BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B6769F2B26E884001D37BE /* GoogleService-Info.plist */; };
+		03B676A22B26EAE9001D37BE /* DataStructuresDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B676A12B26EAE8001D37BE /* DataStructuresDetailView.swift */; };
+		03B676A42B26EC31001D37BE /* SwiftUIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B676A32B26EC31001D37BE /* SwiftUIDetailView.swift */; };
+		03B676A62B26EC6B001D37BE /* ObjectOrientedProgrammingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B676A52B26EC6B001D37BE /* ObjectOrientedProgrammingData.swift */; };
+		03B676A82B26EED3001D37BE /* SwiftBasicsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B676A72B26EED3001D37BE /* SwiftBasicsDetailView.swift */; };
 		B809380D2B092C14004F9F57 /* SwiftInstructApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809380C2B092C14004F9F57 /* SwiftInstructApp.swift */; };
 		B809380F2B092C14004F9F57 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809380E2B092C14004F9F57 /* MainMenuView.swift */; };
 		B80938112B092C15004F9F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80938102B092C15004F9F57 /* Assets.xcassets */; };
@@ -25,13 +30,17 @@
 		B82A5F862B0E826E002045E6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A5F852B0E826D002045E6 /* HeaderView.swift */; };
 		B8ED84C22B0E4CD3005086E9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED84C12B0E4CD3005086E9 /* RegisterView.swift */; };
 		B8ED84C42B0E4CE2005086E9 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED84C32B0E4CE2005086E9 /* LogInView.swift */; };
-		B8ED84C82B0E5629005086E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8ED84C72B0E5629005086E9 /* GoogleService-Info.plist */; };
 		B8ED84CB2B0E5683005086E9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B8ED84CA2B0E5683005086E9 /* FirebaseAuth */; };
 		B8ED84CD2B0E5683005086E9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B8ED84CC2B0E5683005086E9 /* FirebaseFirestore */; };
 		B8ED84CF2B0E5683005086E9 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B8ED84CE2B0E5683005086E9 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03B6769F2B26E884001D37BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03B676A12B26EAE8001D37BE /* DataStructuresDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStructuresDetailView.swift; path = ../../../../../Downloads/DataStructuresDetailView.swift; sourceTree = "<group>"; };
+		03B676A32B26EC31001D37BE /* SwiftUIDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUIDetailView.swift; path = ../../../../../Downloads/SwiftUIDetailView.swift; sourceTree = "<group>"; };
+		03B676A52B26EC6B001D37BE /* ObjectOrientedProgrammingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectOrientedProgrammingData.swift; path = ../../../../../Downloads/ObjectOrientedProgrammingData.swift; sourceTree = "<group>"; };
+		03B676A72B26EED3001D37BE /* SwiftBasicsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftBasicsDetailView.swift; path = ../../../../../Downloads/SwiftBasicsDetailView.swift; sourceTree = "<group>"; };
 		B80938092B092C14004F9F57 /* SwiftInstruct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftInstruct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B809380C2B092C14004F9F57 /* SwiftInstructApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInstructApp.swift; sourceTree = "<group>"; };
 		B809380E2B092C14004F9F57 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
@@ -52,7 +61,6 @@
 		B82A5F852B0E826D002045E6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		B8ED84C12B0E4CD3005086E9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		B8ED84C32B0E4CE2005086E9 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		B8ED84C72B0E5629005086E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 		B80938002B092C14004F9F57 = {
 			isa = PBXGroup;
 			children = (
+				03B6769F2B26E884001D37BE /* GoogleService-Info.plist */,
 				B809380B2B092C14004F9F57 /* SwiftInstruct */,
 				B809380A2B092C14004F9F57 /* Products */,
 			);
@@ -93,7 +102,6 @@
 				B80938202B093A08004F9F57 /* Views */,
 				B809380C2B092C14004F9F57 /* SwiftInstructApp.swift */,
 				B80938102B092C15004F9F57 /* Assets.xcassets */,
-				B8ED84C72B0E5629005086E9 /* GoogleService-Info.plist */,
 				B809381F2B09379E004F9F57 /* Info.plist */,
 				B80938122B092C15004F9F57 /* Preview Content */,
 			);
@@ -121,6 +129,10 @@
 		B80938202B093A08004F9F57 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				03B676A72B26EED3001D37BE /* SwiftBasicsDetailView.swift */,
+				03B676A52B26EC6B001D37BE /* ObjectOrientedProgrammingData.swift */,
+				03B676A32B26EC31001D37BE /* SwiftUIDetailView.swift */,
+				03B676A12B26EAE8001D37BE /* DataStructuresDetailView.swift */,
 				B809380E2B092C14004F9F57 /* MainMenuView.swift */,
 				B80938262B0970B4004F9F57 /* ModuleView.swift */,
 				B80938302B099F85004F9F57 /* ModulesListView.swift */,
@@ -215,7 +227,7 @@
 				B80938142B092C15004F9F57 /* Preview Assets.xcassets in Resources */,
 				B80938112B092C15004F9F57 /* Assets.xcassets in Resources */,
 				B809381D2B093768004F9F57 /* Handjet-Medium.ttf in Resources */,
-				B8ED84C82B0E5629005086E9 /* GoogleService-Info.plist in Resources */,
+				03B676A02B26E885001D37BE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,15 +239,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8ED84C22B0E4CD3005086E9 /* RegisterView.swift in Sources */,
+				03B676A22B26EAE9001D37BE /* DataStructuresDetailView.swift in Sources */,
 				B80938312B099F85004F9F57 /* ModulesListView.swift in Sources */,
 				B809380F2B092C14004F9F57 /* MainMenuView.swift in Sources */,
 				B80938252B096CC4004F9F57 /* Theme.swift in Sources */,
+				03B676A42B26EC31001D37BE /* SwiftUIDetailView.swift in Sources */,
 				B809382B2B0973E8004F9F57 /* FontStyle.swift in Sources */,
 				B8ED84C42B0E4CE2005086E9 /* LogInView.swift in Sources */,
 				B809382F2B0984D4004F9F57 /* IconLabelStyle.swift in Sources */,
 				B809380D2B092C14004F9F57 /* SwiftInstructApp.swift in Sources */,
 				B80938352B09A1F2004F9F57 /* ModuleProgressViewStyle.swift in Sources */,
 				B80938272B0970B4004F9F57 /* ModuleView.swift in Sources */,
+				03B676A82B26EED3001D37BE /* SwiftBasicsDetailView.swift in Sources */,
+				03B676A62B26EC6B001D37BE /* ObjectOrientedProgrammingData.swift in Sources */,
 				B82A5F842B0E7280002045E6 /* TabBarView.swift in Sources */,
 				B80938232B093BE5004F9F57 /* Modules.swift in Sources */,
 				B82A5F862B0E826E002045E6 /* HeaderView.swift in Sources */,
