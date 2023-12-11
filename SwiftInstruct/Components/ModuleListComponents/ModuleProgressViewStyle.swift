@@ -14,13 +14,14 @@ struct ModuleProgressBarViewStyle: ProgressViewStyle {
                 .frame(height: 15)
             ProgressView(configuration)
                 .overlay {
-                    LinearGradient(gradient: Gradient(colors: gradientColors),
-                                   startPoint: .leading,
-                                   endPoint: .trailing)
+                    LinearGradient(
+                        gradient: Gradient(colors: gradientColors),
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
                 }
                 .mask(ProgressView(configuration))
                 .frame(height: 12)
-                .padding(.horizontal)
         }
     }
 }

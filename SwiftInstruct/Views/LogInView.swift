@@ -4,16 +4,75 @@ import SwiftUI
 
 struct LogInView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @State private var email = ""
+    @State private var password = ""
+    @EnvironmentObject var authModel: AuthorizeModel
     
     var body: some View {
-        VStack {
-            Form {
-                TextField("Email Address", text: $email)
-                SecureField("Password", text: $password)
+        NavigationStack {
+            ZStack {
+                BackgroundView()
+                
+                VStack(alignment: .center, spacing: 10) {
+                    Spacer()
+                    
+                    Text("Welcome Back")
+                        .multilineTextAlignment(.center)
+                        .font(.appTitle)
+                        .foregroundStyle(.black)
+                        .padding()
+                    
+                    InputView(text: $email,
+                              placeholder: "Email")
+                    
+                    InputView(text: $password,
+                              placeholder: "Password",
+                              isSecureField: true)
+                    
+                    // Tries to log the user in
+                    Button {
+                        Task {
+                            try await authModel.logIn(email: email, password: password)
+                            
+                            if authModel.userSession != nil {
+                                ContentView()
+                            }
+                        }
+                    } label: {
+                        Text("Log In")
+                            .font(.logRegTitle)
+                            .foregroundStyle(.white)
+                    }
+                    .frame(width: 350, height: 50)
+                    .background(.black)
+                    .disabled(!formIsValid)
+                    .opacity(formIsValid ? 1.0 : 0.25)
+                    .cornerRadius(10)
+                    
+                    Spacer()
+                    
+                    // Takes user to sign up page
+                    NavigationLink {
+                        RegisterView()
+                    } label: {
+                        HStack {
+                            Text("Don't have an account?")
+                            Text("Sign Up")
+                                .fontWeight(.bold)
+                        }
+                        .foregroundStyle(.black)
+                    }
+                }
+                .padding()
             }
         }
+    }
+}
+
+extension LogInView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty && email.contains("@") &&
+               !password.isEmpty && password.count > 5
     }
 }
 
