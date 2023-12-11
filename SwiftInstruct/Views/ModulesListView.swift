@@ -12,13 +12,12 @@ struct ModulesListView: View {
                 BackgroundView()
                     
                 VStack(spacing: 80) {
-                    
                     Spacer()
                     
                     ModuleOverviewView()
                     
                     List(modules) { module in
-                        NavigationLink(destination: Text(module.title)) {
+                        NavigationLink(destination: SubModulesView(modules: module.subModules)) {
                             ModuleView(modules: module)
                         }
                         .listRowBackground(

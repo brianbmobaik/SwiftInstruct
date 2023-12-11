@@ -36,6 +36,7 @@
 		B87771EF2B26757D00456935 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B87771EE2B26757D00456935 /* Roboto-Bold.ttf */; };
 		B87771F22B26863B00456935 /* ModuleOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771F12B26863B00456935 /* ModuleOverviewView.swift */; };
 		B87771F42B26AD7500456935 /* ProfileOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771F32B26AD7500456935 /* ProfileOverviewView.swift */; };
+		B87771F62B279E5100456935 /* SubModulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771F52B279E5100456935 /* SubModulesView.swift */; };
 		B8ED84C22B0E4CD3005086E9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED84C12B0E4CD3005086E9 /* RegisterView.swift */; };
 		B8ED84C42B0E4CE2005086E9 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED84C32B0E4CE2005086E9 /* LogInView.swift */; };
 		B8ED84CB2B0E5683005086E9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B8ED84CA2B0E5683005086E9 /* FirebaseAuth */; };
@@ -75,6 +76,7 @@
 		B87771EE2B26757D00456935 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B87771F12B26863B00456935 /* ModuleOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleOverviewView.swift; sourceTree = "<group>"; };
 		B87771F32B26AD7500456935 /* ProfileOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOverviewView.swift; sourceTree = "<group>"; };
+		B87771F52B279E5100456935 /* SubModulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubModulesView.swift; sourceTree = "<group>"; };
 		B8ED84C12B0E4CD3005086E9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		B8ED84C32B0E4CE2005086E9 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +156,7 @@
 				B87771E42B263A6100456935 /* UserProfileView.swift */,
 				B87771E62B263A6F00456935 /* SettingsView.swift */,
 				B87771EA2B2665F400456935 /* HomeView.swift */,
+				B87771F52B279E5100456935 /* SubModulesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				B80938272B0970B4004F9F57 /* ModuleView.swift in Sources */,
 				B82A5F842B0E7280002045E6 /* TabBarView.swift in Sources */,
 				B80938232B093BE5004F9F57 /* Modules.swift in Sources */,
+				B87771F62B279E5100456935 /* SubModulesView.swift in Sources */,
 				B82A5F862B0E826E002045E6 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
