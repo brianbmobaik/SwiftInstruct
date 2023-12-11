@@ -23,8 +23,8 @@ struct ModuleView: View {
                     .progressViewStyle(ModuleProgressBarViewStyle())
                 
                 // Progress Checks
-                Image(systemName: "checkmark.circle.fill")
-                    .foregroundColor(.green)
+                Image(systemName: modules.progressCheck)
+                    .foregroundColor(modules.progressTheme)
             }
             
             // Progress Percent Values

@@ -10,11 +10,19 @@ extension Font {
     }
     
     static var logRegTitle: Font {
-        return Font.custom("Handjet-Medium", size: 20)
+        return Font.custom("Handjet-Medium", size: 24)
     }
     
     static var moduleTitle: Font {
         return Font.custom("Roboto-Medium", size: 16)
+    }
+    
+    static var moduleName: Font {
+        return Font.custom("Roboto-Bold", size: 24)
+    }
+    
+    static var moduleDescription: Font {
+        return Font.custom("Roboto-Medium", size: 12)
     }
     
     static var progressTitle: Font {

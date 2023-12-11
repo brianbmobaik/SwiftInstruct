@@ -18,14 +18,24 @@
 		B80938272B0970B4004F9F57 /* ModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80938262B0970B4004F9F57 /* ModuleView.swift */; };
 		B80938292B097379004F9F57 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B80938282B097379004F9F57 /* Roboto-Medium.ttf */; };
 		B809382B2B0973E8004F9F57 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809382A2B0973E8004F9F57 /* FontStyle.swift */; };
-		B809382F2B0984D4004F9F57 /* IconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809382E2B0984D4004F9F57 /* IconLabelStyle.swift */; };
 		B80938312B099F85004F9F57 /* ModulesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80938302B099F85004F9F57 /* ModulesListView.swift */; };
 		B80938352B09A1F2004F9F57 /* ModuleProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80938342B09A1F2004F9F57 /* ModuleProgressViewStyle.swift */; };
 		B82A5F842B0E7280002045E6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A5F832B0E7280002045E6 /* TabBarView.swift */; };
 		B82A5F862B0E826E002045E6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A5F852B0E826D002045E6 /* HeaderView.swift */; };
 		B87771D52B25A7C500456935 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87771D42B25A7C500456935 /* GoogleService-Info.plist */; };
-		B87771D72B25AA3000456935 /* MainMenuBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771D62B25AA3000456935 /* MainMenuBackgroundView.swift */; };
 		B87771D92B25AE3600456935 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771D82B25AE3600456935 /* BackgroundView.swift */; };
+		B87771DD2B25E09F00456935 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771DC2B25E09F00456935 /* InputView.swift */; };
+		B87771DF2B261E3600456935 /* AuthorizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771DE2B261E3600456935 /* AuthorizeModel.swift */; };
+		B87771E12B261ECB00456935 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771E02B261ECB00456935 /* User.swift */; };
+		B87771E32B262AAC00456935 /* UserOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771E22B262AAC00456935 /* UserOverviewView.swift */; };
+		B87771E52B263A6100456935 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771E42B263A6100456935 /* UserProfileView.swift */; };
+		B87771E72B263A6F00456935 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771E62B263A6F00456935 /* SettingsView.swift */; };
+		B87771E92B265B7900456935 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771E82B265B7900456935 /* ContentView.swift */; };
+		B87771EB2B2665F400456935 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771EA2B2665F400456935 /* HomeView.swift */; };
+		B87771ED2B26669600456935 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771EC2B26669600456935 /* CircularProgressBar.swift */; };
+		B87771EF2B26757D00456935 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B87771EE2B26757D00456935 /* Roboto-Bold.ttf */; };
+		B87771F22B26863B00456935 /* ModuleOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771F12B26863B00456935 /* ModuleOverviewView.swift */; };
+		B87771F42B26AD7500456935 /* ProfileOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87771F32B26AD7500456935 /* ProfileOverviewView.swift */; };
 		B8ED84C22B0E4CD3005086E9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED84C12B0E4CD3005086E9 /* RegisterView.swift */; };
 		B8ED84C42B0E4CE2005086E9 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED84C32B0E4CE2005086E9 /* LogInView.swift */; };
 		B8ED84CB2B0E5683005086E9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B8ED84CA2B0E5683005086E9 /* FirebaseAuth */; };
@@ -47,14 +57,24 @@
 		B80938262B0970B4004F9F57 /* ModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleView.swift; sourceTree = "<group>"; };
 		B80938282B097379004F9F57 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		B809382A2B0973E8004F9F57 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
-		B809382E2B0984D4004F9F57 /* IconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLabelStyle.swift; sourceTree = "<group>"; };
 		B80938302B099F85004F9F57 /* ModulesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesListView.swift; sourceTree = "<group>"; };
 		B80938342B09A1F2004F9F57 /* ModuleProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleProgressViewStyle.swift; sourceTree = "<group>"; };
 		B82A5F832B0E7280002045E6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		B82A5F852B0E826D002045E6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		B87771D42B25A7C500456935 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B87771D62B25AA3000456935 /* MainMenuBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuBackgroundView.swift; sourceTree = "<group>"; };
 		B87771D82B25AE3600456935 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		B87771DC2B25E09F00456935 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		B87771DE2B261E3600456935 /* AuthorizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeModel.swift; sourceTree = "<group>"; };
+		B87771E02B261ECB00456935 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B87771E22B262AAC00456935 /* UserOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOverviewView.swift; sourceTree = "<group>"; };
+		B87771E42B263A6100456935 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		B87771E62B263A6F00456935 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B87771E82B265B7900456935 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B87771EA2B2665F400456935 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B87771EC2B26669600456935 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		B87771EE2B26757D00456935 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		B87771F12B26863B00456935 /* ModuleOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleOverviewView.swift; sourceTree = "<group>"; };
+		B87771F32B26AD7500456935 /* ProfileOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOverviewView.swift; sourceTree = "<group>"; };
 		B8ED84C12B0E4CD3005086E9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		B8ED84C32B0E4CE2005086E9 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +114,7 @@
 			children = (
 				B809381A2B093724004F9F57 /* Fonts */,
 				B80938212B093BAC004F9F57 /* Models */,
+				B87771DB2B25DDD300456935 /* Components */,
 				B80938202B093A08004F9F57 /* Views */,
 				B809380C2B092C14004F9F57 /* SwiftInstructApp.swift */,
 				B80938102B092C15004F9F57 /* Assets.xcassets */,
@@ -115,6 +136,7 @@
 		B809381A2B093724004F9F57 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				B87771EE2B26757D00456935 /* Roboto-Bold.ttf */,
 				B80938282B097379004F9F57 /* Roboto-Medium.ttf */,
 				B809381C2B093768004F9F57 /* Handjet-Light.ttf */,
 				B809381B2B093768004F9F57 /* Handjet-Medium.ttf */,
@@ -126,15 +148,12 @@
 			isa = PBXGroup;
 			children = (
 				B809380E2B092C14004F9F57 /* MainMenuView.swift */,
-				B80938262B0970B4004F9F57 /* ModuleView.swift */,
 				B80938302B099F85004F9F57 /* ModulesListView.swift */,
-				B80938342B09A1F2004F9F57 /* ModuleProgressViewStyle.swift */,
 				B8ED84C12B0E4CD3005086E9 /* RegisterView.swift */,
 				B8ED84C32B0E4CE2005086E9 /* LogInView.swift */,
-				B82A5F832B0E7280002045E6 /* TabBarView.swift */,
-				B82A5F852B0E826D002045E6 /* HeaderView.swift */,
-				B87771D62B25AA3000456935 /* MainMenuBackgroundView.swift */,
-				B87771D82B25AE3600456935 /* BackgroundView.swift */,
+				B87771E42B263A6100456935 /* UserProfileView.swift */,
+				B87771E62B263A6F00456935 /* SettingsView.swift */,
+				B87771EA2B2665F400456935 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,9 +164,36 @@
 				B80938222B093BE5004F9F57 /* Modules.swift */,
 				B80938242B096CC4004F9F57 /* Theme.swift */,
 				B809382A2B0973E8004F9F57 /* FontStyle.swift */,
-				B809382E2B0984D4004F9F57 /* IconLabelStyle.swift */,
+				B87771DE2B261E3600456935 /* AuthorizeModel.swift */,
+				B87771E02B261ECB00456935 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B87771DB2B25DDD300456935 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B87771F02B26860000456935 /* ModuleListComponents */,
+				B82A5F832B0E7280002045E6 /* TabBarView.swift */,
+				B82A5F852B0E826D002045E6 /* HeaderView.swift */,
+				B87771D82B25AE3600456935 /* BackgroundView.swift */,
+				B87771DC2B25E09F00456935 /* InputView.swift */,
+				B87771E22B262AAC00456935 /* UserOverviewView.swift */,
+				B87771E82B265B7900456935 /* ContentView.swift */,
+				B87771EC2B26669600456935 /* CircularProgressBar.swift */,
+				B87771F32B26AD7500456935 /* ProfileOverviewView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B87771F02B26860000456935 /* ModuleListComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B80938262B0970B4004F9F57 /* ModuleView.swift */,
+				B80938342B09A1F2004F9F57 /* ModuleProgressViewStyle.swift */,
+				B87771F12B26863B00456935 /* ModuleOverviewView.swift */,
+			);
+			path = ModuleListComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +229,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					B80938082B092C14004F9F57 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -216,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87771EF2B26757D00456935 /* Roboto-Bold.ttf in Resources */,
 				B80938292B097379004F9F57 /* Roboto-Medium.ttf in Resources */,
 				B809381E2B093768004F9F57 /* Handjet-Light.ttf in Resources */,
 				B80938142B092C15004F9F57 /* Preview Assets.xcassets in Resources */,
@@ -234,16 +281,25 @@
 			files = (
 				B87771D92B25AE3600456935 /* BackgroundView.swift in Sources */,
 				B8ED84C22B0E4CD3005086E9 /* RegisterView.swift in Sources */,
+				B87771F22B26863B00456935 /* ModuleOverviewView.swift in Sources */,
+				B87771E92B265B7900456935 /* ContentView.swift in Sources */,
+				B87771E32B262AAC00456935 /* UserOverviewView.swift in Sources */,
 				B80938312B099F85004F9F57 /* ModulesListView.swift in Sources */,
+				B87771EB2B2665F400456935 /* HomeView.swift in Sources */,
 				B809380F2B092C14004F9F57 /* MainMenuView.swift in Sources */,
+				B87771E72B263A6F00456935 /* SettingsView.swift in Sources */,
+				B87771E52B263A6100456935 /* UserProfileView.swift in Sources */,
 				B80938252B096CC4004F9F57 /* Theme.swift in Sources */,
+				B87771DF2B261E3600456935 /* AuthorizeModel.swift in Sources */,
+				B87771DD2B25E09F00456935 /* InputView.swift in Sources */,
+				B87771E12B261ECB00456935 /* User.swift in Sources */,
+				B87771ED2B26669600456935 /* CircularProgressBar.swift in Sources */,
+				B87771F42B26AD7500456935 /* ProfileOverviewView.swift in Sources */,
 				B809382B2B0973E8004F9F57 /* FontStyle.swift in Sources */,
 				B8ED84C42B0E4CE2005086E9 /* LogInView.swift in Sources */,
-				B809382F2B0984D4004F9F57 /* IconLabelStyle.swift in Sources */,
 				B809380D2B092C14004F9F57 /* SwiftInstructApp.swift in Sources */,
 				B80938352B09A1F2004F9F57 /* ModuleProgressViewStyle.swift in Sources */,
 				B80938272B0970B4004F9F57 /* ModuleView.swift in Sources */,
-				B87771D72B25AA3000456935 /* MainMenuBackgroundView.swift in Sources */,
 				B82A5F842B0E7280002045E6 /* TabBarView.swift in Sources */,
 				B80938232B093BE5004F9F57 /* Modules.swift in Sources */,
 				B82A5F862B0E826E002045E6 /* HeaderView.swift in Sources */,
@@ -289,6 +345,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -349,6 +406,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

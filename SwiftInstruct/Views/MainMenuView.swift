@@ -4,49 +4,49 @@ import SwiftUI
 
 struct MainMenuView: View {
     
-    @State private var animateGradient: Bool = false
-    
     var body: some View {
 
-        ZStack {
-            MainMenuBackgroundView()
-            
-            VStack(alignment: .center) {
+        NavigationStack {
+            ZStack {
+                BackgroundView()
                 
-                Spacer()
-                
-                HStack(alignment: .center) {
-                    Spacer()
-                    // App Logo
-                    Image("ic-Logo")
+                VStack(alignment: .center) {
                     
-                    // App Title
-                    Text("SwiftInstruct")
-                        .font(.appTitle)
-                        .shadow(radius: 2)
                     Spacer()
-                }
-                .padding()
-                
-                Spacer()
-                
-                HStack(alignment: .center) {
-                    // Log In Button
-                    Button {
-                        
-                    } label: {
-                        Image("btn-LogIn")
-                    }
                     
-                    // Register Button
-                    Button {
+                    HStack(alignment: .center) {
+                        Spacer()
+                        // App Logo
+                        Image("ic-Logo")
                         
-                    } label: {
-                        Image("btn-Register")
+                        // App Title
+                        Text("SwiftInstruct")
+                            .font(.appTitle)
+                            .opacity(0.8)
+                        Spacer()
                     }
+                    .padding()
+                    
+                    Spacer()
+                    
+                    HStack(alignment: .center, spacing: 25) {
+                        // Log In Button
+                        NavigationLink {
+                            LogInView()
+                        } label: {
+                            Image("btn-LogIn")
+                        }
+                        
+                        // Register Button
+                        NavigationLink {
+                            RegisterView()
+                        } label: {
+                            Image("btn-Register")
+                        }
+                    }
+                    .padding()
+                    
                 }
-                .padding()
-                
             }
         }
 

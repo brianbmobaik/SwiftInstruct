@@ -4,40 +4,75 @@ import SwiftUI
 
 struct LogInView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @State private var email = ""
+    @State private var password = ""
+    @EnvironmentObject var authModel: AuthorizeModel
     
     var body: some View {
-        ZStack {
-            MainMenuBackgroundView()
-            
-            VStack {
-                Text("Welcome to SwiftInstruct")
-                    .font(.appTitle)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.black)
-                    .padding()
+        NavigationStack {
+            ZStack {
+                BackgroundView()
                 
-                TextField("Email", text: $email)
-                    .padding()
+                VStack(alignment: .center, spacing: 10) {
+                    Spacer()
+                    
+                    Text("Welcome Back")
+                        .multilineTextAlignment(.center)
+                        .font(.appTitle)
+                        .foregroundStyle(.black)
+                        .padding()
+                    
+                    InputView(text: $email,
+                              placeholder: "Email")
+                    
+                    InputView(text: $password,
+                              placeholder: "Password",
+                              isSecureField: true)
+                    
+                    // Tries to log the user in
+                    Button {
+                        Task {
+                            try await authModel.logIn(email: email, password: password)
+                            
+                            if authModel.userSession != nil {
+                                ContentView()
+                            }
+                        }
+                    } label: {
+                        Text("Log In")
+                            .font(.logRegTitle)
+                            .foregroundStyle(.white)
+                    }
                     .frame(width: 350, height: 50)
-                    .background(.white.opacity(0.75))
+                    .background(.black)
+                    .disabled(!formIsValid)
+                    .opacity(formIsValid ? 1.0 : 0.25)
                     .cornerRadius(10)
-                
-                TextField("Password", text: $password)
-                    .padding()
-                    .frame(width: 350, height: 50)
-                    .background(.white.opacity(0.75))
-                    .cornerRadius(10)
-                
-                Button("Log In") {
-                    // Log in logic
+                    
+                    Spacer()
+                    
+                    // Takes user to sign up page
+                    NavigationLink {
+                        RegisterView()
+                    } label: {
+                        HStack {
+                            Text("Don't have an account?")
+                            Text("Sign Up")
+                                .fontWeight(.bold)
+                        }
+                        .foregroundStyle(.black)
+                    }
                 }
-                .frame(width: 350, height: 50)
-                .background(.white.opacity(1))
-                .cornerRadius(10)
+                .padding()
             }
         }
+    }
+}
+
+extension LogInView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty && email.contains("@") &&
+               !password.isEmpty && password.count > 5
     }
 }
 

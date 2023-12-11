@@ -6,22 +6,30 @@ struct ModulesListView: View {
     let modules: [Modules]
     
     var body: some View {
-        VStack {
-            HeaderView()
-            
-            NavigationStack {
-                List(modules) { module in
-                    NavigationLink(destination: Text(module.title)) {
-                        ModuleView(modules: module)
+        
+        NavigationStack {
+            ZStack {
+                BackgroundView()
+                    
+                VStack(spacing: 80) {
+                    
+                    Spacer()
+                    
+                    ModuleOverviewView()
+                    
+                    List(modules) { module in
+                        NavigationLink(destination: Text(module.title)) {
+                            ModuleView(modules: module)
+                        }
+                        .listRowBackground(
+                            RoundedRectangle(cornerRadius: 15, style: .continuous)
+                                .foregroundColor(Color(.charcoal))
+                                .frame(width: 360, height: 70))
                     }
-                    .listRowBackground(RoundedRectangle(cornerRadius: 15, style: .continuous)
-                        .foregroundColor(module.theme.mainColor)
-                        .frame(width: 360, height: 70))
+                    .navigationTitle("Modules")
+                    .scrollContentBackground(.hidden)
                 }
-                .navigationTitle("Modules")
             }
-            
-            TabBarView()
         }
     }
 }
