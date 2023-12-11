@@ -18,7 +18,20 @@ struct ModulesListView: View {
                     ModuleOverviewView()
                     
                     List(modules) { module in
-                        NavigationLink(destination: Text(module.title)) {
+                        NavigationLink(destination: {
+                            switch module.title {
+                            case "Module 1: Swift Basics":
+                                SwiftBasicsDetailView()
+                            case "Module 2: Object-Oriented Programming":
+                                ObjectOrientedProgrammingDetailView()
+                            case "Module 3: Data Structures":
+                                DataStructuresDetailView()
+                            case "Module 4: Swift UI":
+                                SwiftUIDetailView()
+                            default:
+                                Text(module.title)
+                            }
+                        }) {
                             ModuleView(modules: module)
                         }
                         .listRowBackground(

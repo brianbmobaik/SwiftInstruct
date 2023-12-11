@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037DEF522B270E9B0088D954 /* SwiftBasicsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DEF512B270E9B0088D954 /* SwiftBasicsDetailView.swift */; };
+		037DEF542B2710B80088D954 /* ObjectOrientedProgrammingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DEF532B2710B80088D954 /* ObjectOrientedProgrammingData.swift */; };
+		037DEF562B2711040088D954 /* DataStructuresDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DEF552B2711040088D954 /* DataStructuresDetailView.swift */; };
+		037DEF582B2711360088D954 /* SwiftUIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DEF572B2711360088D954 /* SwiftUIDetailView.swift */; };
 		B809380D2B092C14004F9F57 /* SwiftInstructApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809380C2B092C14004F9F57 /* SwiftInstructApp.swift */; };
 		B809380F2B092C14004F9F57 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B809380E2B092C14004F9F57 /* MainMenuView.swift */; };
 		B80938112B092C15004F9F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80938102B092C15004F9F57 /* Assets.xcassets */; };
@@ -44,6 +48,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037DEF512B270E9B0088D954 /* SwiftBasicsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftBasicsDetailView.swift; path = ../../../../../Downloads/SwiftBasicsDetailView.swift; sourceTree = "<group>"; };
+		037DEF532B2710B80088D954 /* ObjectOrientedProgrammingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectOrientedProgrammingData.swift; path = ../../../../../Downloads/ObjectOrientedProgrammingData.swift; sourceTree = "<group>"; };
+		037DEF552B2711040088D954 /* DataStructuresDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStructuresDetailView.swift; path = ../../../../../Downloads/DataStructuresDetailView.swift; sourceTree = "<group>"; };
+		037DEF572B2711360088D954 /* SwiftUIDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftUIDetailView.swift; path = ../../../../../Downloads/SwiftUIDetailView.swift; sourceTree = "<group>"; };
 		B80938092B092C14004F9F57 /* SwiftInstruct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftInstruct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B809380C2B092C14004F9F57 /* SwiftInstructApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInstructApp.swift; sourceTree = "<group>"; };
 		B809380E2B092C14004F9F57 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
@@ -147,6 +155,10 @@
 		B80938202B093A08004F9F57 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				037DEF572B2711360088D954 /* SwiftUIDetailView.swift */,
+				037DEF552B2711040088D954 /* DataStructuresDetailView.swift */,
+				037DEF532B2710B80088D954 /* ObjectOrientedProgrammingData.swift */,
+				037DEF512B270E9B0088D954 /* SwiftBasicsDetailView.swift */,
 				B809380E2B092C14004F9F57 /* MainMenuView.swift */,
 				B80938302B099F85004F9F57 /* ModulesListView.swift */,
 				B8ED84C12B0E4CD3005086E9 /* RegisterView.swift */,
@@ -279,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037DEF562B2711040088D954 /* DataStructuresDetailView.swift in Sources */,
 				B87771D92B25AE3600456935 /* BackgroundView.swift in Sources */,
 				B8ED84C22B0E4CD3005086E9 /* RegisterView.swift in Sources */,
 				B87771F22B26863B00456935 /* ModuleOverviewView.swift in Sources */,
@@ -289,15 +302,18 @@
 				B809380F2B092C14004F9F57 /* MainMenuView.swift in Sources */,
 				B87771E72B263A6F00456935 /* SettingsView.swift in Sources */,
 				B87771E52B263A6100456935 /* UserProfileView.swift in Sources */,
+				037DEF582B2711360088D954 /* SwiftUIDetailView.swift in Sources */,
 				B80938252B096CC4004F9F57 /* Theme.swift in Sources */,
 				B87771DF2B261E3600456935 /* AuthorizeModel.swift in Sources */,
 				B87771DD2B25E09F00456935 /* InputView.swift in Sources */,
+				037DEF522B270E9B0088D954 /* SwiftBasicsDetailView.swift in Sources */,
 				B87771E12B261ECB00456935 /* User.swift in Sources */,
 				B87771ED2B26669600456935 /* CircularProgressBar.swift in Sources */,
 				B87771F42B26AD7500456935 /* ProfileOverviewView.swift in Sources */,
 				B809382B2B0973E8004F9F57 /* FontStyle.swift in Sources */,
 				B8ED84C42B0E4CE2005086E9 /* LogInView.swift in Sources */,
 				B809380D2B092C14004F9F57 /* SwiftInstructApp.swift in Sources */,
+				037DEF542B2710B80088D954 /* ObjectOrientedProgrammingData.swift in Sources */,
 				B80938352B09A1F2004F9F57 /* ModuleProgressViewStyle.swift in Sources */,
 				B80938272B0970B4004F9F57 /* ModuleView.swift in Sources */,
 				B82A5F842B0E7280002045E6 /* TabBarView.swift in Sources */,
