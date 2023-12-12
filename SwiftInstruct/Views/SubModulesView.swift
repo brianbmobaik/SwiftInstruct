@@ -2,6 +2,7 @@
 import SwiftUI
 
 struct SubModulesView: View {
+    let moduleName: String
     let modules: [ModuleData]
     
     var body: some View {
@@ -10,7 +11,11 @@ struct SubModulesView: View {
            VStack(alignment: .leading) {
                ScrollView {
                    VStack(alignment: .leading, spacing: 20) {
-                       ForEach(modules, id: \.title) { module in
+                       Text("\(moduleName)")
+                           .font(.title)
+                           .fontWeight(.semibold)
+                           .underline()
+                       ForEach(modules) { module in
                            categoryView(title: module.title, description: module.description, example: module.example)
                        }
                    }
@@ -48,5 +53,8 @@ struct SubModulesView: View {
 }
 
 #Preview {
-    SubModulesView(modules: Modules.sampleModule[3].subModules)
+    SubModulesView(
+        moduleName: "Hi",
+        modules: Modules.sampleModule[0].subModules
+    )
 }

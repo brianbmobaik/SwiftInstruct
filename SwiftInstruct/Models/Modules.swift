@@ -10,15 +10,25 @@ enum SubModules: String {
     case SUI
 }
 
-struct ModuleData{
+struct ModuleData: Identifiable{
+    let id: UUID
     let title: String
     let description: String
     let example: String
+    var progress = 0.0
+    
+    init(id: UUID = UUID(), title: String, description: String, example: String) {
+        self.id = id
+        self.title = title
+        self.description = description
+        self.example = example
+    }
 }
 
-struct Modules: Identifiable {
+class Modules: Identifiable, ObservableObject {
     let id: UUID
     var title: String
+    var progress: Float
     var theme: Theme
     var SM: SubModules
     var subModules: [ModuleData] {
@@ -30,16 +40,24 @@ struct Modules: Identifiable {
         }
     }
     
-    var progress: Float
+    var isFinished: Bool {
+        return 1 > progress
+    }
     
     var progressCheck: String {
-        return progress == 1 ? "checkmark.circle.fill" :
+        return progress >= 1 ? "checkmark.circle.fill" :
                progress > 0 ? "arrow.right.circle.fill" : "x.circle.fill"
     }
     
     var progressTheme: Color {
-        return progress == 1 ? .green :
+        return progress >= 1 ? .green :
                progress > 0 ? .orange : .red
+    }
+    
+    func increaseProgress() {
+        if isFinished {
+            progress = progress + 0.25
+        }
     }
     
     init(id: UUID = UUID(), title: String, progress: Float, theme: Theme, SM: SubModules) {

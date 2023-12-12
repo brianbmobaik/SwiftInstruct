@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct ModulesListView: View {
-    let modules: [Modules]
+    @State var modules: [Modules]
     
     var body: some View {
         
@@ -17,7 +17,10 @@ struct ModulesListView: View {
                     ModuleOverviewView()
                     
                     List(modules) { module in
-                        NavigationLink(destination: SubModulesView(modules: module.subModules)) {
+                        NavigationLink(
+                            destination: SubModulesView(
+                                moduleName: module.title,
+                                modules: module.subModules)) {
                             ModuleView(modules: module)
                         }
                         .listRowBackground(

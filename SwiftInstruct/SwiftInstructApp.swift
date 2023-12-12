@@ -13,7 +13,6 @@ struct SwiftInstructApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            MainMenuView()
             ContentView()
                 .environmentObject(authViewModel)
         }

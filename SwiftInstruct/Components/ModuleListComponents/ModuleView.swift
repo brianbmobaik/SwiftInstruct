@@ -32,6 +32,10 @@ struct ModuleView: View {
                 .font(.progressTitle)
                 .foregroundColor(.orange)
         }
+        .onTapGesture {
+            modules.increaseProgress()
+            print(modules.progress)
+        }
     }
 }
 
