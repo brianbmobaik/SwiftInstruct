@@ -71,11 +71,11 @@ class Modules: Identifiable, ObservableObject {
     static let sampleModule: [Modules] =
     [
         Modules(title: "Module 1: Swift Basics",
-                progress: 1.00,
+                progress: 0.00,
                 theme: .charcoal,
                 SM: .SB),
         Modules(title: "Module 2: Object-Oriented Programming",
-                progress: 0.4572,
+                progress: 0.00,
                 theme: .charcoal,
                 SM: .OOP),
         Modules(title: "Module 3: Data Structures",
